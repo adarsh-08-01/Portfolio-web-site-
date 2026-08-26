@@ -50,30 +50,4 @@ portfolio main/
 
 ---
 
-## 📸 How to Add Your iOS App Screenshots
-
-When you are ready to upload screenshots of your iOS apps (*Just Sip*, *Travelling App*, *SangeetStream iOS*, etc.):
-
-1. Save your app screenshot images into the folder:
-   `portfolio main/assets/images/`
-2. Open `js/data.js` in your editor.
-3. Update the `previewImages` array for the relevant app in `appsShowcase`, for example:
-   ```javascript
-   previewImages: ["assets/images/my_just_sip_screenshot.png"]
-   ```
-
----
-
-## 🌐 Running Locally
-
-To preview your website locally:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then open `http://localhost:8080` in your web browser.
-
----
-
 *Created with ❤️ for Adarsh Kashyap (CodeWithAdarsh)*
