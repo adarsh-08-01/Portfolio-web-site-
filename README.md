@@ -2,6 +2,8 @@
 
 A vibrant, high-energy, "Creative Artsy" portfolio website inspired by [portfoliofy.io/preview/creative-artsy](https://portfoliofy.io/preview/creative-artsy) created for **Adarsh Kashyap** (iOS Developer, Video Editor, Graphic Designer & Creative Tech Enthusiast).
 
+🔗 **Live Site:** [heyadarsh.vercel.app](https://heyadarsh.vercel.app/)
+
 ---
 
 ## 🚀 Features & Scrapbook Design System
@@ -65,10 +67,13 @@ When you are ready to upload screenshots of your iOS apps (*Just Sip*, *Travelli
 ## 🌐 Running Locally
 
 To preview your website locally:
+
 ```bash
 python3 -m http.server 8080
 ```
+
 Then open `http://localhost:8080` in your web browser.
 
 ---
+
 *Created with ❤️ for Adarsh Kashyap (CodeWithAdarsh)*
