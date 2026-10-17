@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'>
+<rect width='96' height='96' rx='20' fill='#00599C'/>
+<path fill='#004482' d='M48 12L80 30V66L48 84L16 66V30L48 12Z'/>
+<text x='38' y='60' font-family='Arial, sans-serif' font-weight='900' font-size='32' fill='#FFFFFF' text-anchor='middle'>C++</text>
+</svg>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Kashyap — iOS Developer & Video Editor Portfolio</title>
+    <meta name="description" content="Portfolio of Adarsh Kashyap - iOS Developer, Video Editor & Creative Tech Enthusiast.">
+    <meta name="theme-color" content="#FFC93C">
+
+    <!-- Favicon & Site Logo -->
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Adarsh Kashyap — Portfolio">
+    <meta property="og:description" content="iOS Developer & Video Editor Portfolio built with Creative Artsy aesthetics.">
+    <meta property="og:image" content="assets/images/logo.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Grain Overlay -->
+    <div class="ca-grain" aria-hidden="true"></div>
+
+    <!-- Splash Screen Intro -->
+    <div class="ca-splash" id="splash-screen" aria-hidden="true">
+        <div class="ca-splash-bubble">
+            <img src="assets/images/logo.jpg" alt="Logo" class="splash-logo-img">
+            <span>Oh, hello! You found me! ✨</span>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#hero" class="nav-brand" id="nav-logo">
+            <span class="brand-icon-smiley">
+                <img src="assets/images/logo.jpg" alt="CodeWithAdarsh Logo">
+            </span>
+            <span>codewith<span style="color: var(--ca-magenta)">adarsh</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#hero" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Featured Work</a></li>
+                <li><a href="index.html#apps" class="nav-link">iOS App Showcase</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Social Badges & CTA -->
+        <div class="nav-socials">
+            <a href="https://www.linkedin.com/in/adarsh-kashyap-94238028b" target="_blank" class="social-pill" style="background-color: var(--ca-yellow)" title="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.4 1.4 0 1 0 1.4 1.4a1.41 1.41 0 0 0-1.4-1.4Z"/></svg>
+            </a>
+            <a href="https://github.com/adarsh-08-01" target="_blank" class="social-pill" style="background-color: var(--ca-purple); color: #FFF" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@codewithadarsh08/shorts" target="_blank" class="social-pill" style="background-color: var(--ca-magenta); color: #FFF" title="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 .6-.03 1.29-.1 2.09c-.06.8-.15 1.43-.28 1.9c-.2.74-.71 1.29-1.45 1.49c-.47.13-1.1.22-1.9.28c-.8.07-1.49.1-2.09.1L12 18c-.6 0-1.29-.03-2.09-.1c-.8-.06-1.43-.15-1.9-.28c-.74-.2-1.29-.71-1.49-1.45c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L6 12c0-.6.03-1.29.1-2.09c.06-.8.15-1.43.28-1.9c.2-.74.71-1.29 1.45-1.49c.47-.13 1.1-.22 1.9-.28c.8-.07 1.49-.1 2.09-.1L12 6c.6 0 1.29.03 2.09.1c.8.06 1.43.15 1.9.28c.74.2 1.29.71 1.49 1.45Z"/></svg>
+            </a>
+            <a href="https://portfolio.malloy.sg/Adarshkashyap" target="_blank" class="btn-contact-header">Video Portfolio 🎬</a>
+        </div>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Mobile Menu">
+            <span>☰</span>
+        </button>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <aside class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="nav-brand">codewith<span style="color: var(--ca-magenta)">adarsh</span></span>
+            <button class="close-btn" id="close-drawer-btn">✕</button>
+        </div>
+        <nav style="display: flex; flex-direction: column; gap: 1rem;">
+            <a href="index.html#hero" class="mobile-nav-link nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link nav-link">About</a>
+            <a href="index.html#projects" class="mobile-nav-link nav-link">Featured Work</a>
+            <a href="index.html#apps" class="mobile-nav-link nav-link">iOS App Showcase</a>
+            <a href="index.html#contact" class="mobile-nav-link btn-artsy btn-artsy-primary" style="text-align: center; margin-top: 1rem;">Contact Me</a>
+        </nav>
+    </aside>
+
+    <main>
+        <!-- ROBIN-STYLE HERO SECTION (SCREENSHOT 5 REFERENCE) -->
+        <section class="hero-robin-container" id="hero">
+            <p class="robin-header-label">my name is</p>
+
+            <!-- Main Name Box with Orange Hand-drawn Frame & Floating Badges -->
+            <div class="robin-name-wrapper">
+                <!-- Black Interactive Crop / Selection Box with Corner Handles (Hover Effect) -->
+                <div class="robin-crop-box" aria-hidden="true">
+                    <span class="crop-handle handle-tl"></span>
+                    <span class="crop-handle handle-tr"></span>
+                    <span class="crop-handle handle-bl"></span>
+                    <span class="crop-handle handle-br"></span>
+                </div>
+
+                <div class="robin-orange-frame"></div>
+                <div class="robin-name-box">
+                    <h1 class="robin-name-text">ADARSH</h1>
+                </div>
+
+                <!-- Floating Badges around Name Box -->
+                <span class="robin-badge-floating robin-badge-top-left">MADE THINGS</span>
+                <span class="robin-badge-floating robin-badge-top-right">SWEAT THE DETAILS</span>
+                <span class="robin-badge-floating robin-badge-bottom-left">iOS Developer</span>
+                <span class="robin-badge-floating robin-badge-bottom-right">Video Editor</span>
+
+                <!-- Hand-drawn SVG Doodle Arrows Pointing to Name Box -->
+                <svg class="robin-doodle-arrow arrow-left" viewBox="0 0 60 60" fill="none" stroke="var(--ca-ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M 10 50 Q 25 28, 48 10" />
+                    <path d="M 32 10 L 50 8 L 46 26" />
+                </svg>
+                <svg class="robin-doodle-arrow arrow-right" viewBox="0 0 60 60" fill="none" stroke="var(--ca-ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M 50 50 Q 35 28, 12 10" />
+                    <path d="M 28 10 L 10 8 L 14 26" />
+                </svg>
+            </div>
+
+            <!-- Availability Status Pill -->
+            <div class="robin-status-pill">
+                <span class="robin-status-dot"></span>
+                <span>OPEN TO NEW WORK AND GOOD PROBLEMS</span>
+            </div>
+
+            <!-- Headline Row with Floating Circular Avatars on Left & Right -->
+            <div class="robin-tagline-row">
+                <div class="robin-avatar-left" title="Adarsh Pixel Art Avatar">
+                    <img src="assets/images/adarsh_pixel_art.jpg" alt="Adarsh Pixel Art Avatar">
+                </div>
+                <h2 class="robin-tagline-text">
+                    I build native SwiftUI iOS apps, craft high-impact video edits, and design software that gets out of your way. ✨
+                </h2>
+                <div class="robin-avatar-right" title="Adarsh Workspace Setup">
+                    <img src="assets/images/adarsh_workspace.jpg" alt="Adarsh Workspace Setup">
+                </div>
+            </div>
+
+            <!-- Robin-style Contact Button -->
+            <div>
+                <a href="#contact" class="btn-robin-contact">
+                    <span class="btn-robin-icon">↗</span>
+                    <span class="btn-robin-label">CONTACT ME</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION (ORIGINAL HOME PAGE SCRAPBOOK VERSION) -->
+        <section class="about-section reveal-on-scroll" id="about">
+            <!-- Top-left Handwritten Label -->
+            <p class="about-handwritten-topleft">about me!</p>
+
+            <!-- Centered Header Badge -->
+            <div class="about-header-centered">
+                <div class="about-whats-up-badge">what's up</div>
+            </div>
+
+            <!-- 3-Column Layout: Left Polaroid | Center Content | Right Polaroid -->
+            <div class="about-3col-layout-scrapbook">
+                <!-- Left Column: Polaroid Card (Pixel Art Avatar) -->
+                <div class="about-left-col">
+                    <div class="polaroid-card tilt-card" style="transform: rotate(-4deg);">
+                        <div class="washi-tape-top-left"></div>
+                        <div class="washi-tape-top-right"></div>
+                        <div class="polaroid-img-wrapper">
+                            <img src="assets/images/adarsh_pixel_art.jpg" alt="Adarsh Kashyap Pixel Art Avatar">
+                        </div>
+                        <p class="polaroid-caption">2026</p>
+                    </div>
+                </div>
+
+                <!-- Center Column: Bio Text & Skill Pills with Separate Emoji Boxes -->
+                <div class="about-center-col">
+                    <div class="about-bio-text">
+                        I'm a developer and creator who gets a little too excited about making complicated things feel simple. ✨ I care about the small details, smooth SwiftUI animations, and shipping work that genuinely makes someone's day easier. 🎨
+                    </div>
+
+                    <!-- Skill Pairs Grid (Main Pill + Separate Emoji Box) -->
+                    <div class="about-skill-pairs-grid">
+                        <div class="skill-pair">
+                            <div class="skill-pill-main" style="background-color: var(--ca-yellow); color: var(--ca-ink);">
+                                Interaction Design
+                            </div>
+                            <div class="skill-emoji-sq" style="background-color: var(--ca-yellow); color: var(--ca-ink);">
+                                🎨
+                            </div>
+                        </div>
+
+                        <div class="skill-pair">
+                            <div class="skill-pill-main" style="background-color: var(--ca-green); color: #FFFFFF;">
+                                Prototyping
+                            </div>
+                            <div class="skill-emoji-sq" style="background-color: var(--ca-green); color: #FFFFFF;">
+                                🧩
+                            </div>
+                        </div>
+
+                        <div class="skill-pair">
+                            <div class="skill-pill-main" style="background-color: var(--ca-magenta); color: #FFFFFF;">
+                                iOS & SwiftUI
+                            </div>
+                            <div class="skill-emoji-sq" style="background-color: var(--ca-magenta); color: #FFFFFF;">
+                                📱
+                            </div>
+                        </div>
+
+                        <div class="skill-pair">
+                            <div class="skill-pill-main" style="background-color: var(--ca-blue); color: #FFFFFF;">
+                                Motion & Video
+                            </div>
+                            <div class="skill-emoji-sq" style="background-color: var(--ca-blue); color: #FFFFFF;">
+                                💡
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Polaroid Card (Workspace Setup Photo) -->
+                <div class="about-right-col">
+                    <div class="polaroid-card tilt-card" style="transform: rotate(4deg);">
+                        <div class="washi-tape-top-left" style="background-color: rgba(255, 244, 184, 0.85);"></div>
+                        <div class="washi-tape-top-right" style="background-color: rgba(96, 165, 250, 0.85);"></div>
+                        <div class="polaroid-img-wrapper">
+                            <img src="assets/images/adarsh_workspace.jpg" alt="Adarsh Workspace Setup">
+                        </div>
+                        <p class="polaroid-caption">my workspace</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED WORKS SHOWCASE SECTION (PORTFOLIOFY MATCH: CARDS WITH THEIR OWN ATTACHED TABS) -->
+        <section class="featured-works-wrapper" id="projects">
+            <div class="featured-header-container">
+                <p class="robin-header-label">explore my work!</p>
+                <svg class="doodle-wavy-underline" viewBox="0 0 140 12" fill="none" stroke="var(--ca-ink)" stroke-width="2">
+                    <path d="M3 6 Q 35 0, 70 6 T 137 6" />
+                </svg>
+                <h2 class="featured-pixel-heading">FEATURED WORKS</h2>
+                <div class="sticky-note-subtext">
+                    A few products I helped make simpler, calmer, and easier to trust.
+                </div>
+            </div>
+
+            <!-- Card Display Container with Attached Tabs on Each Card -->
+            <div class="featured-card-display">
+
+                <!-- CARD 1 (PROJECT 01): JustSip (Blue Block #3B5BFF) -->
+                <article class="project-block-stacked" id="p1-justsip" style="background-color: #3B5BFF; color: #FFFFFF;">
+                    <div class="card-attached-tab">✦ PROJECT 01</div>
+                    <div class="project-block-inner">
+                        <div class="project-left-col">
+                            <div class="project-date-row">
+                                <span class="project-date-dot"></span>
+                                <span>MAR 19, 2026</span>
+                            </div>
+                            <h3 class="project-block-title">JustSip — Hydration Tracker</h3>
+                            <p class="project-block-desc">
+                                Making daily water intake logging effortless with 3D avatar animations, weekly history analytics, and smart reminders.
+                            </p>
+                            <a href="https://github.com/adarsh-08-01/JustSip" target="_blank" class="project-view-link">
+                                VIEW PROJECT ↗
+                            </a>
+                            <div class="project-tag-chips">
+                                <span class="chip-black-pill">IOS APP</span>
+                                <span class="chip-black-pill">SWIFTUI</span>
+                                <span class="chip-black-pill">3D AVATAR</span>
+                            </div>
+                        </div>
+
+                        <div class="project-right-col">
+                            <div class="framed-screenshot-wrapper">
+                                <div class="washi-tape-top-left"></div>
+                                <div class="washi-tape-top-right"></div>
+                                <div class="screenshot-grid-3">
+                                    <img src="assets/images/justsip/HomeView2.png" alt="JustSip Screen 1">
+                                    <img src="assets/images/justsip/HistroyView.png" alt="JustSip Screen 2">
+                                    <img src="assets/images/justsip/NotificationView.png" alt="JustSip Screen 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 2 (PROJECT 02): Travel Sathi (Black Block #111111) -->
+                <article class="project-block-stacked" id="p2-travelsathi" style="background-color: #111111; color: #FFFFFF;">
+                    <div class="card-attached-tab">✦ PROJECT 02</div>
+                    <div class="project-block-inner">
+                        <div class="project-left-col">
+                            <div class="project-date-row" style="color: var(--ca-yellow);">
+                                <span class="project-date-dot"></span>
+                                <span>FEATURED IOS APP</span>
+                            </div>
+                            <h3 class="project-block-title" style="color: var(--ca-yellow);">Travel Sathi</h3>
+                            <p class="project-block-desc">
+                                Your personal travel budget guide & destination planner, allowing travelers to discover top spots based on custom budget tiers and persona profiles.
+                            </p>
+                            <a href="https://github.com/adarsh-08-01/Travel-Sathi-" target="_blank" class="project-view-link" style="color: var(--ca-yellow);">
+                                VIEW PROJECT ↗
+                            </a>
+                            <div class="project-tag-chips">
+                                <span class="chip-black-pill" style="background-color: var(--ca-yellow); color: var(--ca-ink);">IOS APP</span>
+                                <span class="chip-black-pill" style="background-color: var(--ca-yellow); color: var(--ca-ink);">SWIFTUI</span>
+                                <span class="chip-black-pill" style="background-color: var(--ca-yellow); color: var(--ca-ink);">TRAVEL PLANNER</span>
+                            </div>
+                        </div>
+
+                        <div class="project-right-col">
+                            <div class="framed-screenshot-wrapper" style="transform: rotate(-1.5deg);">
+                                <div class="washi-tape-top-left"></div>
+                                <div class="washi-tape-top-right"></div>
+                                <div class="screenshot-grid-3">
+                                    <img src="assets/images/travelsathi/TravelSathi_Destinations.png" alt="Travel Sathi Destinations">
+                                    <img src="assets/images/travelsathi/TravelSathi_Role.png" alt="Travel Sathi Role Selection">
+                                    <img src="assets/images/travelsathi/TravelSathi_Budget.png" alt="Travel Sathi Budget Selector">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 3 (PROJECT 03): SangeetStream (Pink Block #FF3D7F) -->
+                <article class="project-block-stacked" id="p3-sangeetstream" style="background-color: #FF3D7F; color: #FFFFFF;">
+                    <div class="card-attached-tab">✦ PROJECT 03</div>
+                    <div class="project-block-inner">
+                        <div class="project-left-col">
+                            <div class="project-date-row">
+                                <span class="project-date-dot"></span>
+                                <span>FEATURED WEB APP</span>
+                            </div>
+                            <h3 class="project-block-title">SangeetStream</h3>
+                            <p class="project-block-desc">
+                                Interactive web music player with real-time stream search, dynamic play queues, and custom player controls.
+                            </p>
+                            <a href="https://mysangeetstream.netlify.app/#Yo%20Yo%20Honey%20Singh" target="_blank" class="project-view-link">
+                                VIEW PROJECT ↗
+                            </a>
+                            <div class="project-tag-chips">
+                                <span class="chip-black-pill">AUDIO WEB APP</span>
+                                <span class="chip-black-pill">JAVASCRIPT</span>
+                                <span class="chip-black-pill">UI UX</span>
+                            </div>
+                        </div>
+
+                        <div class="project-right-col">
+                            <div class="framed-screenshot-wrapper" style="transform: rotate(1.8deg);">
+                                <div class="washi-tape-top-left"></div>
+                                <div class="washi-tape-top-right"></div>
+                                <div class="single-banner-img">
+                                    <img src="assets/images/sangeetstream.png" alt="SangeetStream Web Music Player Homepage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 4 (PROJECT 04): RK Construction (Yellow Block #FFC93C) -->
+                <article class="project-block-stacked" id="p4-rkconstruction" style="background-color: #FFC93C; color: #111111;">
+                    <div class="card-attached-tab">✦ PROJECT 04</div>
+                    <div class="project-block-inner">
+                        <div class="project-left-col">
+                            <div class="project-date-row">
+                                <span class="project-date-dot"></span>
+                                <span>ACTIVE CLIENT SITE</span>
+                            </div>
+                            <h3 class="project-block-title">RK Construction</h3>
+                            <p class="project-block-desc">
+                                Full-stack corporate platform for premier commercial engineering & construction services featuring project portfolios and inquiry forms.
+                            </p>
+                            <a href="https://rkconstruction11.in/" target="_blank" class="project-view-link">
+                                VIEW PROJECT ↗
+                            </a>
+                            <div class="project-tag-chips">
+                                <span class="chip-black-pill">COMMERCIAL WEB</span>
+                                <span class="chip-black-pill">CLIENT SITE</span>
+                                <span class="chip-black-pill">JAVASCRIPT</span>
+                            </div>
+                        </div>
+
+                        <div class="project-right-col">
+                            <div class="framed-screenshot-wrapper" style="transform: rotate(-1deg);">
+                                <div class="washi-tape-top-left"></div>
+                                <div class="washi-tape-top-right"></div>
+                                <div class="single-banner-img">
+                                    <img src="assets/images/rk_construction.png" alt="RK Construction Website Banner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 5 (PROJECT 05): KidsLearn (Emerald Block #059669) -->
+                <article class="project-block-stacked" id="p5-kidslearn" style="background-color: #059669; color: #FFFFFF;">
+                    <div class="card-attached-tab">✦ PROJECT 05</div>
+                    <div class="project-block-inner">
+                        <div class="project-left-col">
+                            <div class="project-date-row" style="color: #FFD43B;">
+                                <span class="project-date-dot"></span>
+                                <span>NEW IOS RELEASE</span>
+                            </div>
+                            <h3 class="project-block-title">KidsLearn — Mini Games</h3>
+                            <p class="project-block-desc">
+                                A playful educational casual game for young learners featuring interactive mini-games across Counting, Letters, Shapes, and Math with instant rewards and streak tracking.
+                            </p>
+                            <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <a href="https://appetize.io/app/b_o52qjiufaocxm64w22bstzxhv4" target="_blank" class="project-view-link" style="color: #FFD43B; text-decoration-color: #FFD43B;">
+                                    TRY LIVE DEMO 📱
+                                </a>
+                                <a href="https://github.com/adarsh-08-01/KidsLearn." target="_blank" class="project-view-link">
+                                    VIEW PROJECT ↗
+                                </a>
+                            </div>
+                            <div class="project-tag-chips">
+                                <span class="chip-black-pill" style="background-color: #FFD43B; color: var(--ca-ink);">IOS APP</span>
+                                <span class="chip-black-pill" style="background-color: #FFD43B; color: var(--ca-ink);">SWIFTUI</span>
+                                <span class="chip-black-pill" style="background-color: #FFD43B; color: var(--ca-ink);">KIDS GAME</span>
+                                <span class="chip-black-pill" style="background-color: #FFD43B; color: var(--ca-ink);">APPETIZE DEMO</span>
+                            </div>
+                        </div>
+
+                        <div class="project-right-col">
+                            <div class="framed-screenshot-wrapper" style="transform: rotate(1.2deg);">
+                                <div class="washi-tape-top-left"></div>
+                                <div class="washi-tape-top-right"></div>
+                                <div class="screenshot-grid-3">
+                                    <img src="assets/images/kidslearn/HomeView.png" alt="KidsLearn Home Dashboard">
+                                    <img src="assets/images/kidslearn/AdditionLesson.png" alt="KidsLearn Addition Quiz">
+                                    <img src="assets/images/kidslearn/ShapesLesson.png" alt="KidsLearn Shapes Quiz">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- iOS App Showcase Grid & Demo -->
+        <section class="section-wrapper reveal-on-scroll" id="apps">
+            <p class="section-label">mobile apps & creations!</p>
+            <h2 class="section-title">iOS App Showcase & Demo</h2>
+
+            <div class="filter-tabs-row">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ios">iOS SwiftUI Apps 📱</button>
+                <button class="filter-btn" data-filter="web">Web Applications 🌐</button>
+                <button class="filter-btn" data-filter="video">Video & Motion 🎬</button>
+            </div>
+
+            <div class="apps-grid" id="apps-grid">
+                <!-- Rendered dynamically by app.js -->
+            </div>
+        </section>
+
+        <!-- CLOSING CTA SECTION (LET'S TALK) -->
+        <section class="closing-cta-section reveal-on-scroll" id="contact">
+            <!-- Official Pixel Art Logo Mascot Avatar -->
+            <div class="cta-logo-avatar">
+                <img src="assets/images/logo.jpg" alt="Adarsh Kashyap Logo Avatar">
+            </div>
+
+            <h2 class="cta-pixel-heading">LET'S TALK</h2>
+            <p class="cta-subtext">
+                Have an iOS App project, video editing contract, or creative collaboration in mind? Let's connect!
+            </p>
+
+            <div class="cta-buttons-wrapper">
+                <a href="mailto:adarshk.work.0801@gmail.com" class="btn-contact-cta btn-cta-yellow">
+                    Email Me: adarshk.work.0801@gmail.com ✉️
+                </a>
+                <a href="https://wa.me/916390790801" target="_blank" class="btn-contact-cta btn-cta-green">
+                    WhatsApp Direct: +91 6390790801 💬
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <p>Made with ❤️ by <strong>CodeWithAdarsh</strong> — Adarsh Kashyap © 2026</p>
+        <p style="margin-top: 0.5rem; color: #777;">Inspired by Creative Artsy Scrapbook Design System</p>
+    </footer>
+
+    <!-- Native Modal Dialog for App Details & Screenshot Gallery -->
+    <dialog id="app-dialog">
+        <div class="dialog-header">
+            <div>
+                <span id="dialog-badge" class="app-badge">iOS App</span>
+                <h3 id="dialog-title" style="font-family: var(--font-display); font-size: 1.8rem; margin-top: 0.4rem;">App Title</h3>
+            </div>
+            <button id="dialog-close-btn" class="close-btn">✕</button>
+        </div>
+
+        <div>
+            <p id="dialog-desc" style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                Detailed app description.
+            </p>
+
+            <div id="dialog-gallery" style="margin-bottom: 1.5rem;">
+                <!-- Screenshot Gallery Scroll rendered by app.js -->
+            </div>
+
+            <h4 style="font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem;">Tech Stack & Architecture:</h4>
+            <div id="dialog-tech" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                <!-- Tech pills -->
+            </div>
+
+            <div id="dialog-links" class="dialog-links-group">
+                <!-- GitHub / Live Links -->
+            </div>
+        </div>
+    </dialog>
+
+    <!-- JS Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
